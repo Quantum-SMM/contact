@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Quantum SMM - We're Ready to Assist</title> <!-- Engaging Title -->
+    <meta name="description" content="Contact Quantum SMM easily via Call, WhatsApp, Telegram, Email, or our online form. We offer prompt support for all your SMM needs and inquiries."> <!-- Engaging Description -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22><stop offset=%220%25%22 style=%22stop-color:%2300f0ff;stop-opacity:1%22 /><stop offset=%22100%25%22 style=%22stop-color:%23a855f7;stop-opacity:1%22 /></linearGradient></defs><path fill=%22url(%23g)%22 d=%22M50 0L61.8 38.2L100 38.2L69.1 61.8L80.9 100L50 76.4L19.1 100L30.9 61.8L0 38.2L38.2 38.2Z%22 /></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            --bg-dark-primary: #080d14;
+            --bg-dark-secondary: #101522;
+            --bg-dark-tertiary: #1a202c;
+            --accent-cyan: #00e5ff;
+            --accent-purple: #b367ff;
+            --accent-indigo: #7076ff;
+            --accent-green: #14f195;
+            --accent-pink: #ff55a5;
+            --accent-gold: #ffc85a;
+            --text-light: #f0f4f8;
+            --text-medium: #a0aec0;
+            --text-dark: var(--bg-dark-primary);
+            --border-color: rgba(55, 65, 81, 0.6); /* Slightly more visible border */
+            --border-accent: rgba(0, 229, 255, 0.5); /* Slightly more visible accent */
+            --glow-cyan: 0 0 18px rgba(0, 229, 255, 0.5), 0 0 7px rgba(0, 229, 255, 0.8); /* Stronger glow */
+            --glow-purple: 0 0 18px rgba(179, 103, 255, 0.5), 0 0 7px rgba(179, 103, 255, 0.8); /* Stronger glow */
+            --gradient-tech: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            --gradient-button: linear-gradient(90deg, var(--accent-indigo), var(--accent-purple));
+            --gradient-dark-card: linear-gradient(145deg, rgba(17, 21, 34, 0.8), rgba(26, 32, 44, 0.9)); /* Darker card */
+            --gradient-support: linear-gradient(45deg, var(--accent-cyan), var(--accent-pink));
+            --gradient-contact-item-hover: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(179, 103, 255, 0.1));
+
+            --shadow-glow-sm: 0 0 10px rgba(0, 229, 255, 0.25);
+            --shadow-glow-md: 0 0 18px rgba(179, 103, 255, 0.3);
+            --shadow-glow-lg: 0 0 30px rgba(112, 118, 255, 0.35);
+            --shadow-dark-soft: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+            --border-radius: 12px;
+            --transition-speed: 0.35s;
+            --transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --transition-smooth: cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-light); background-color: var(--bg-dark-primary);
+            background-image:
+                radial-gradient(rgba(26, 32, 44, 0.5) 0.6px, transparent 0.6px),
+                radial-gradient(rgba(26, 32, 44, 0.5) 0.6px, transparent 0.6px);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+            line-height: 1.8;
+            overflow-x: hidden;
+            position: relative;
+        }
+        body.mobile-menu-active {
+             overflow: hidden;
+        }
+
+        /* --- Utilities --- */
+        .container { max-width: 1300px; width: 100%; margin: 0 auto; padding: 0 1.5rem; }
+        .section { padding: 6rem 0; position: relative; overflow: hidden; }
+        .section-small-padding { padding: 4.5rem 0; }
+        .section-divider { border-top: 1px solid var(--border-color); opacity: 0.5; margin: 3rem auto; max-width: 1000px; } /* Adjusted margin */
+        .section-bg-secondary { background-color: var(--bg-dark-secondary); background-image: linear-gradient(rgba(8, 13, 20, 0.92), rgba(8, 13, 20, 0.97)), linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); background-size: cover, 40px 40px; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
+        .section-title { text-align: center; margin-bottom: 4.5rem; font-size: 3rem; font-weight: 700; color: var(--text-light); position: relative; padding-bottom: 1.5rem; letter-spacing: 1px; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); }
+        .section-title::before { content: ''; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 120px; height: 3px; background: var(--gradient-tech); opacity: 0.4; border-radius: 2px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 140px; height: 5px; background: var(--gradient-tech); border-radius: 3px; box-shadow: var(--glow-cyan); animation: pulse-glow 3s infinite ease-in-out; }
+        .text-center { text-align: center; }
+        .mb-4 { margin-bottom: 4rem; } /* Utility Margin */
+
+        .btn { display: inline-block; padding: 1rem 2.2rem; border-radius: var(--border-radius); font-weight: 600; text-decoration: none; transition: all var(--transition-speed) var(--transition-smooth); cursor: pointer; border: 2px solid transparent; font-size: 1rem; position: relative; overflow: hidden; z-index: 1; text-transform: uppercase; letter-spacing: 0.5px; }
+        .btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent); transition: left var(--transition-speed) ease-out; z-index: -1; }
+        .btn:hover::before { left: 100%; }
+        .btn-primary { background: var(--gradient-button); color: var(--text-light); box-shadow: var(--shadow-glow-md), 0 4px 10px rgba(0,0,0,0.3); }
+        .btn-primary:hover { transform: translateY(-5px) scale(1.05); box-shadow: var(--shadow-glow-lg), 0 10px 20px rgba(0,0,0,0.4); filter: brightness(1.25); }
+        .btn-secondary { background-color: transparent; color: var(--accent-cyan); border-color: var(--accent-cyan); box-shadow: var(--shadow-glow-sm); }
+        .btn-secondary:hover { background-color: var(--accent-cyan); color: var(--bg-dark-primary); box-shadow: var(--glow-cyan), 0 4px 10px rgba(0, 229, 255, 0.2); transform: translateY(-3px) scale(1.03); }
+
+        .grid { display: grid; gap: 2.5rem; }
+        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3.5rem;}
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; }
+        .grid-4 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2.5rem;}
+
+        /* --- Animations --- */
+        @keyframes pulse-glow { 0%, 100% { box-shadow: var(--glow-cyan); opacity: 0.8; } 50% { box-shadow: 0 0 28px rgba(0, 229, 255, 0.7); opacity: 1; } }
+        @keyframes subtle-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+        @keyframes pulse-support { 0%, 100% { transform: scale(1); box-shadow: 0 0 15px rgba(0, 229, 255, 0.4); } 50% { transform: scale(1.08); box-shadow: 0 0 25px rgba(0, 229, 255, 0.7); } }
+        @keyframes slide-in-left { from { transform: translateX(-110%); opacity: 0; visibility: hidden; } to { transform: translateX(0); opacity: 1; visibility: visible; } }
+        @keyframes slide-out-left { from { transform: translateX(0); opacity: 1; visibility: visible; } to { transform: translateX(-110%); opacity: 0; visibility: hidden; } }
+        @keyframes fade-in-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+        .animated-element { opacity: 0; /* Start hidden */ transform: translateY(60px); transition: opacity 0.9s ease-out, transform 0.9s var(--transition-bounce); }
+        .animated-element.visible { opacity: 1; transform: translateY(0); }
+        .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; } .delay-5 { transition-delay: 0.5s; }
+
+        /* --- Header & Navigation (Consistency Check) --- */
+        #main-header { background-color: rgba(8, 13, 20, 0.85); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); padding: 1rem 0; position: sticky; top: 0; left:0; right: 0; width: 100%; z-index: 1000; border-bottom: 1px solid var(--border-color); transition: background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease, border-top-color var(--transition-speed) ease, padding var(--transition-speed) ease; border-top: 3px solid transparent; }
+        #main-header.scrolled { background-color: rgba(8, 13, 20, 0.97); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); border-bottom-color: rgba(55, 65, 81, 0.7); border-top: 3px solid var(--accent-cyan); padding: 0.8rem 0; }
+        #main-header .container { display: flex; justify-content: space-between; align-items: center; }
+        #navbar { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        #navbar .logo { font-size: 1.9rem; font-weight: 800; color: var(--text-light); text-decoration: none; letter-spacing: -1px; display: flex; align-items: center; transition: transform var(--transition-speed) ease; font-family: 'Poppins', sans-serif; flex-shrink: 0; }
+        #navbar .logo:hover { transform: scale(1.03) rotate(-2deg); }
+        #navbar .logo i { margin-right: 0.7rem; font-size: 1.8rem; background: var(--gradient-tech); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 8px var(--accent-cyan)); transition: transform 0.6s var(--transition-bounce); }
+        #navbar .logo:hover i { transform: rotate(360deg) scale(1.15); }
+        #navbar ul#nav-links-desktop { list-style: none; display: flex; align-items: center; margin: 0; padding: 0; }
+        #navbar ul#nav-links-desktop li { margin-left: 2.5rem; }
+        #navbar ul#nav-links-desktop li a:not(.btn) { text-decoration: none; color: var(--text-medium); font-weight: 500; padding-bottom: 0.8rem; position: relative; transition: color var(--transition-speed) ease; letter-spacing: 0.7px; font-size: 1.05rem; white-space: nowrap; }
+        #navbar ul#nav-links-desktop li a:not(.btn)::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px; background: var(--accent-cyan); border-radius: 1px; transition: width var(--transition-speed) var(--transition-bounce); box-shadow: var(--glow-cyan); }
+        #navbar ul#nav-links-desktop li a:not(.btn):hover, #navbar ul#nav-links-desktop li a:not(.btn).active { color: var(--text-light); text-shadow: 0 0 6px rgba(0, 229, 255, 0.6); }
+        #navbar ul#nav-links-desktop li a:not(.btn):hover::after, #navbar ul#nav-links-desktop li a:not(.btn).active::after { width: 100%; }
+        .menu-toggle { display: none; cursor: pointer; font-size: 1.9rem; color: var(--text-light); padding: 5px; border: none; background: none; z-index: 1001; margin-left: 1rem; }
+        ul#mobile-nav-links { list-style: none; display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background-color: rgba(11, 18, 32, 0.99); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 1.5rem 0; text-align: center; border-top: 1px solid var(--border-color); box-shadow: 0 15px 30px rgba(0,0,0,0.45); opacity: 0; transform: translateY(-15px) scaleY(0.95); transform-origin: top center; transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; z-index: 999; visibility: hidden; }
+        ul#mobile-nav-links.active { display: flex; opacity: 1; transform: translateY(0) scaleY(1); visibility: visible; transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s; }
+        ul#mobile-nav-links li { margin: 1.3rem 0; }
+        ul#mobile-nav-links li a { color: var(--text-medium); text-decoration: none; font-weight: 500; font-size: 1.2rem; padding: 0.7rem 1rem; transition: color var(--transition-speed) ease, background-color 0.2s ease; display: block; border-radius: 5px; margin: 0 1rem; }
+        ul#mobile-nav-links li a.active, ul#mobile-nav-links li a:hover { color: var(--accent-cyan); background-color: rgba(0, 229, 255, 0.08); }
+
+        /* --- Contact Page Specific Styles --- */
+        #contact-hero { padding: 7rem 0 5rem 0; text-align: center; background: linear-gradient(rgba(8, 13, 20, 0.9), rgba(16, 21, 34, 0.98)), var(--bg-dark-primary); border-bottom: 1px solid var(--border-color); position: relative; overflow: hidden; }
+        #contact-hero::before, #contact-hero::after { content: ''; position: absolute; border-radius: 50%; opacity: 0.1; filter: blur(50px); z-index: 0; }
+        #contact-hero::before { width: 350px; height: 350px; background-color: var(--accent-indigo); top: -60px; right: -90px; animation: subtle-float 11s ease-in-out infinite alternate-reverse; }
+        #contact-hero::after { width: 280px; height: 280px; background-color: var(--accent-pink); bottom: -70px; left: -80px; animation: subtle-float 13s 0.5s ease-in-out infinite alternate; }
+        #contact-hero .container { position: relative; z-index: 1; }
+        #contact-hero h1 { font-size: 3.8rem; color: var(--text-light); margin-bottom: 0.5rem; /* Reduced margin */ font-weight: 700; text-shadow: 0 3px 10px rgba(0,0,0,0.4); }
+        #contact-hero h1 span { background: var(--gradient-tech); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px var(--accent-cyan)); }
+        #contact-hero p { font-size: 1.3rem; color: var(--text-medium); max-width: 800px; margin: 0 auto; opacity: 0.9; margin-top: 0.5rem; /* Added margin */ }
+        #contact-hero p.sub-heading { /* New class for sub-heading */
+             font-size: 1.1rem;
+             margin-top: 1.5rem;
+             color: var(--text-medium);
+             opacity: 0.8;
+        }
+
+
+        #contact-info-section { padding: 6rem 0; } /* Increased padding */
+        .contact-info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; }
+        .contact-info-item {
+            background: var(--gradient-dark-card);
+            padding: 3rem 2rem; /* More padding */
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease, background 0.4s ease;
+            position: relative; /* For pseudo-element glow */
+            overflow: hidden;
+            text-align: center;
+        }
+         .contact-info-item::before { /* Glow effect */
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 0; height: 0;
+            background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+            z-index: 0;
+         }
+        .contact-info-item:hover {
+            transform: translateY(-12px) scale(1.02); /* More lift */
+            box-shadow: var(--shadow-glow-md);
+            background: var(--gradient-contact-item-hover);
+        }
+        .contact-info-item:hover::before {
+            width: 250px; /* Expand size */
+            height: 250px;
+            opacity: 0.15; /* Show glow */
+        }
+        .contact-info-item .icon {
+            font-size: 2.8rem; /* Larger icon */
+            color: var(--accent-cyan);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            position: relative; z-index: 1; /* Icon above glow */
+            transition: transform 0.4s var(--transition-bounce);
+        }
+        .contact-info-item:hover .icon { transform: scale(1.1) rotate(-8deg); }
+        .contact-info-item h4 { font-size: 1.5rem; color: var(--text-light); margin-bottom: 0.8rem; position: relative; z-index: 1; }
+        .contact-info-item p, .contact-info-item a { font-size: 1.05rem; color: var(--text-medium); line-height: 1.7; text-decoration: none; word-break: break-word; transition: color 0.3s ease; position: relative; z-index: 1; }
+        .contact-info-item a:hover { color: var(--accent-cyan); text-shadow: 0 0 5px var(--accent-cyan); }
+        .contact-info-prompt { /* Prompt below contact info */
+             text-align: center;
+             margin-top: 4rem;
+             font-size: 1.1rem;
+             color: var(--text-medium);
+        }
+
+        #contact-form-section { padding: 6rem 0; background-color: var(--bg-dark-secondary); }
+        .contact-form-container {
+            max-width: 850px; /* Wider form */
+            margin: 0 auto;
+            background-color: var(--bg-dark-tertiary);
+            padding: 3.5rem; /* More padding */
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-dark-soft);
+        }
+        .contact-form-container h2 { text-align: center; font-size: 2.8rem; color: var(--text-light); margin-bottom: 1.5rem; } /* Adjusted title */
+         .contact-form-container p.form-intro { /* Intro text for form */
+             text-align: center;
+             color: var(--text-medium);
+             margin-bottom: 3rem;
+             font-size: 1.1rem;
+         }
+        .form-group { margin-bottom: 2rem; } /* More space */
+        .form-group label { display: block; color: var(--text-medium); margin-bottom: 0.7rem; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.6px; }
+        .form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
+            width: 100%; padding: 1.1rem 1.3rem; /* More padding */
+            background-color: rgba(8, 13, 20, 0.8); /* Darker input */
+            border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-light); font-size: 1.05rem; font-family: 'Poppins', sans-serif;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+        .form-group input[type="text"]:focus, .form-group input[type="email"]:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--accent-cyan); background-color: rgba(8, 13, 20, 0.9); /* Darken on focus */
+            box-shadow: 0 0 12px rgba(0, 229, 255, 0.25);
+        }
+        .form-group textarea { min-height: 160px; resize: vertical; }
+        .form-group button { width: 100%; font-size: 1.1rem; padding: 1.1rem 2.2rem;} /* Bigger button */
+
+         /* --- Office Hours Section --- */
+         #office-hours { text-align: center; }
+         #office-hours .icon { font-size: 3rem; color: var(--accent-gold); margin-bottom: 1.5rem; filter: drop-shadow(0 0 10px var(--accent-gold)); }
+         #office-hours h3 { font-size: 1.8rem; color: var(--text-light); margin-bottom: 1rem; }
+         #office-hours p { font-size: 1.1rem; color: var(--text-medium); max-width: 600px; margin: 0 auto; }
+         #office-hours ul { list-style: none; padding: 0; margin-top: 1.5rem; display: inline-block; text-align: left; }
+         #office-hours li { margin-bottom: 0.5rem; font-size: 1.05rem; }
+         #office-hours li strong { color: var(--text-light); min-width: 120px; display: inline-block; }
+
+
+        /* --- Footer (Consistency Check) --- */
+        #main-footer { background-color: var(--bg-dark-primary); color: var(--text-medium); padding: 5rem 0 3rem 0; border-top: 1px solid var(--border-color); }
+        #main-footer .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 3.5rem; align-items: start; }
+        #main-footer .footer-column { margin-bottom: 1.5rem; }
+        #main-footer .footer-logo { grid-column: 1 / -1; font-size: 2.2rem; font-weight: 800; color: var(--text-light); opacity: 0.95; margin-bottom: 2.5rem; text-align: center; display: block; font-family: 'Poppins', sans-serif; }
+         #main-footer .footer-column h4 { color: var(--text-light); font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 600; position: relative; padding-bottom: 0.7rem; letter-spacing: 0.5px; }
+         #main-footer .footer-column h4::after { content: ''; position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; opacity: 0.8; border-radius: 1px; }
+         #main-footer .footer-about h4::after { background: var(--accent-cyan); }
+         #main-footer .footer-links-section h4::after { background: var(--accent-purple); }
+         #main-footer .footer-contact h4::after { background: var(--accent-indigo); }
+        #main-footer .footer-about p { font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; }
+        #main-footer .footer-links { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; padding-left: 0; }
+        #main-footer .footer-links a { color: var(--text-medium); text-decoration: none; transition: color var(--transition-speed) ease, padding-left 0.3s ease; font-size: 1rem; display: inline-block; padding: 0.2rem 0; }
+        #main-footer .footer-links a:hover { color: var(--accent-cyan); text-shadow: 0 0 5px var(--accent-cyan); padding-left: 5px; }
+        #main-footer .social-links { list-style: none; display: flex; gap: 2rem; margin-bottom: 1rem; font-size: 1.7rem; justify-content: flex-start; padding-left: 0; }
+        #main-footer .social-links a { color: var(--text-medium); text-decoration: none; transition: color var(--transition-speed) ease, transform var(--transition-speed) ease; }
+        #main-footer .social-links a:hover { color: var(--accent-cyan); transform: scale(1.25) translateY(-4px); filter: drop-shadow(0 0 10px var(--accent-cyan)); }
+        #main-footer .footer-contact p { margin-top: 1rem; }
+        #main-footer .footer-contact p a { color: var(--text-medium); text-decoration: none; transition: color var(--transition-speed) ease; font-size: 1rem; }
+        #main-footer .footer-contact p a:hover { color: var(--accent-cyan); }
+        #main-footer .copyright { grid-column: 1 / -1; text-align: center; font-size: 0.95rem; opacity: 0.7; line-height: 1.5; margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border-color); }
+        #main-footer .copyright a { color: var(--text-medium); text-decoration: none; border-bottom: 1px dashed rgba(160, 174, 192, 0.5); transition: color 0.3s, border-color 0.3s; }
+        #main-footer .copyright a:hover { color: var(--accent-cyan); border-bottom-color: var(--accent-cyan); }
+
+        /* --- Support Widget (Consistency Check) --- */
+        #support-widget { position: fixed; bottom: 25px; right: 25px; z-index: 1001; }
+        #support-toggle { width: 60px; height: 60px; background: var(--gradient-support); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--text-light); font-size: 1.8rem; cursor: pointer; border: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), var(--shadow-glow-sm); transition: transform 0.3s var(--transition-bounce), box-shadow 0.3s ease; animation: pulse-support 2.5s infinite ease-in-out; }
+        #support-toggle:hover { transform: scale(1.1); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), var(--shadow-glow-md); }
+        #support-options { position: absolute; bottom: 75px; right: 0; display: flex; flex-direction: column; gap: 12px; opacity: 0; visibility: hidden; transform: translateY(15px) scale(0.9); transform-origin: bottom right; transition: all 0.3s var(--transition-bounce); }
+        #support-widget.active #support-options { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+        #support-options a { width: 50px; height: 50px; background-color: var(--bg-dark-tertiary); border: 1px solid var(--border-color); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--text-medium); font-size: 1.5rem; text-decoration: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; }
+        #support-options a:hover { transform: scale(1.1) rotate(5deg); box-shadow: var(--glow-cyan); }
+         #support-options a.whatsapp:hover { background-color: #25D366; color: white; box-shadow: 0 0 15px #25D366; }
+         #support-options a.telegram:hover { background-color: #0088cc; color: white; box-shadow: 0 0 15px #0088cc; }
+         #support-options a.call:hover { background-color: var(--accent-pink); color: white; box-shadow: 0 0 15px var(--accent-pink); }
+
+        /* --- Ad Banner (Fixed Visibility & Animation) --- */
+        #ad-banner {
+            position: fixed; bottom: 25px; left: 25px; background-color: rgba(26, 32, 44, 0.98); /* More opaque */
+            padding: 1rem 1.5rem; border-radius: var(--border-radius); border: 1px solid var(--border-accent);
+            z-index: 1000; display: flex; align-items: center; gap: 1rem; max-width: 320px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+            opacity: 0; visibility: hidden; /* Start hidden */
+            transform: translateX(-110%); /* Start off-screen */
+            /* Transition for showing */
+            transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.25, 1, 0.5, 1), visibility 0s linear 0.7s;
+        }
+        #ad-banner.visible { /* Added by JS */
+             opacity: 1;
+             visibility: visible;
+             transform: translateX(0);
+             transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.25, 1, 0.5, 1), visibility 0s linear 0s;
+        }
+        #ad-banner.hidden { /* Added by JS on close */
+             opacity: 0;
+             visibility: hidden;
+             transform: translateX(-110%);
+             transition: opacity 0.5s ease-in, transform 0.5s ease-in, visibility 0s linear 0.5s; /* Smooth out */
+             pointer-events: none;
+        }
+        #ad-banner p { margin: 0; font-size: 0.95rem; color: var(--text-medium); flex-grow: 1; }
+        #ad-banner p strong { color: var(--accent-cyan); font-weight: 600; }
+        #ad-banner p a { color: var(--accent-pink); text-decoration: none; border-bottom: 1px dotted var(--accent-pink); transition: color 0.3s ease, border-color 0.3s ease; }
+        #ad-banner p a:hover { color: var(--accent-cyan); border-bottom-color: var(--accent-cyan); }
+        #close-ad-btn { background: none; border: none; color: var(--text-medium); font-size: 1.4rem; cursor: pointer; transition: color 0.3s ease, transform 0.3s ease; padding: 0.2rem; line-height: 1; align-self: flex-start; }
+        #close-ad-btn:hover { color: var(--accent-pink); transform: scale(1.15) rotate(90deg); }
+
+        /* --- Responsive Adjustments (Refined Footer Align) --- */
+        @media (max-width: 992px) {
+            #navbar ul#nav-links-desktop { display: none; }
+            .menu-toggle { display: block; }
+            #main-footer .footer-content { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+            #main-footer .footer-column { text-align: left; } /* Keep left align on medium */
+            #main-footer .footer-column h4::after { left: 0; transform: none; }
+            #main-footer .social-links { justify-content: flex-start; }
+        }
+        @media (max-width: 768px) {
+             html { font-size: 14px; }
+             .section { padding: 5rem 0; }
+             .section-title { font-size: 2.6rem; margin-bottom: 3.5rem;}
+             #contact-hero { padding: 5rem 0 3rem 0; }
+             #contact-hero h1 { font-size: 2.8rem; }
+             #contact-hero p { font-size: 1.1rem; }
+             .contact-info-grid { grid-template-columns: 1fr; }
+             .contact-form-container { padding: 2rem; }
+             .contact-form-container h2 { font-size: 2.2rem; margin-bottom: 2rem; }
+             #main-footer .footer-content { grid-template-columns: 1fr; text-align: center; } /* Center align footer content */
+             #main-footer .footer-column { /* Ensure columns themselves align center if needed */ }
+             #main-footer .footer-column h4 { /* Ensure heading is centered */ text-align: center; }
+             #main-footer .footer-column h4::after { left: 50%; transform: translateX(-50%); } /* Center underline */
+             #main-footer .footer-links { align-items: center; /* Center nav links */ }
+             #main-footer .social-links { justify-content: center; /* Center social icons */ }
+             #ad-banner { max-width: calc(100vw - 40px); left: 20px; bottom: 20px; padding: 0.9rem 1.2rem; }
+             #support-widget { bottom: 20px; right: 20px; }
+        }
+        @media (max-width: 480px) {
+             html { font-size: 15px; }
+             .section { padding: 4rem 0; }
+             .section-title { font-size: 2.2rem; }
+             #contact-hero { padding: 4rem 0 2.5rem 0; }
+             #contact-hero h1 { font-size: 2.4rem; line-height: 1.3; }
+             #contact-hero p { font-size: 1.05rem; }
+             .contact-info-item { padding: 2rem 1.5rem; }
+             .contact-form-container { padding: 1.5rem; }
+             .contact-form-container h2 { font-size: 2rem; }
+             .form-group input[type="text"], .form-group input[type="email"], .form-group textarea { padding: 0.9rem 1rem; font-size: 0.95rem;}
+             #ad-banner { padding: 0.8rem 1rem; gap: 0.8rem; bottom: 15px; left: 15px; }
+             #ad-banner p { font-size: 0.9rem; }
+             #close-ad-btn { font-size: 1.2rem; }
+             #support-widget { bottom: 15px; right: 15px; }
+             #support-toggle { width: 55px; height: 55px; font-size: 1.6rem;}
+             #support-options { bottom: 70px; gap: 10px; }
+             #support-options a { width: 45px; height: 45px; font-size: 1.4rem; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <nav id="navbar">
+                <a href="index.html" class="logo"><i class="fas fa-atom"></i>Quantum SMM</a>
+                <ul id="nav-links-desktop">
+                    <li><a href="index.html">Matrix</a></li>
+                    <li><a href="index.html#services">Accelerators</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+        <ul id="mobile-nav-links">
+            <li><a href="index.html">Matrix</a></li>
+            <li><a href="index.html#services">Accelerators</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section id="contact-hero">
+        <div class="container animated-element">
+            <h1>Get In <span>Touch</span></h1>
+            <p>We value your feedback and inquiries. Connect with us through your preferred channel.</p>
+            <p class="sub-heading animated-element delay-1">Our support team typically responds within a few hours during business days.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact-info-section" class="section section-small-padding">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-item animated-element">
+                    <div class="icon"><i class="fas fa-phone-volume"></i></div>
+                    <h4>Call Us</h4>
+                    <p><a href="tel:+880XXXXXXXXXX">+880 XXXXXXXXXX</a></p>
+                    <p>Speak directly with our team.</p>
+                </div>
+                <div class="contact-info-item animated-element delay-1">
+                    <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                    <h4>WhatsApp</h4>
+                    <p><a href="https://wa.me/880XXXXXXXXXX" target="_blank">+880 XXXXXXXXXX</a></p>
+                    <p>Fast and convenient chat support.</p>
+                </div>
+                <div class="contact-info-item animated-element delay-2">
+                    <div class="icon"><i class="fab fa-telegram-plane"></i></div>
+                    <h4>Telegram</h4>
+                    <p><a href="https://t.me/YOUR_USERNAME" target="_blank">@YOUR_USERNAME</a></p>
+                    <p>Direct messaging channel.</p>
+                </div>
+                 <div class="contact-info-item animated-element delay-3">
+                    <div class="icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h4>Email Us</h4>
+                    <p><a href="mailto:support@quantumsmm.com">support@quantumsmm.com</a></p>
+                    <p>Best for detailed inquiries.</p>
+                </div>
+            </div>
+             <p class="contact-info-prompt animated-element delay-4">Choose your preferred method above, or use the form below for general messages.</p>
+        </div>
+    </section>
+
+     <!-- Contact Form Section -->
+    <section id="contact-form-section" class="section section-bg-secondary">
+        <div class="container">
+            <div class="contact-form-container animated-element">
+                <h2>Send Us Your Message</h2>
+                <p class="form-intro animated-element delay-1">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <form action="#" method="POST" id="main-contact-form">
+                    <div class="form-group animated-element delay-2">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group animated-element delay-3">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group animated-element delay-4">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group animated-element delay-5">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="form-group animated-element delay-5">
+                        <button type="submit" class="btn btn-primary">Transmit Message <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours Section (Optional - Hidden by default) -->
+     <section id="office-hours" class="section section-small-padding" style="display: none;">
+         <div class="container animated-element">
+             <div class="icon"><i class="fas fa-clock"></i></div>
+             <h3>Support Availability</h3>
+             <p>Our dedicated support team is available during the following hours (BD Time):</p>
+             <ul>
+                 <li><strong>Saturday - Thursday:</strong> 10:00 AM - 10:00 PM</li>
+                 <li><strong>Friday:</strong> Closed (Limited support for urgent issues)</li>
+             </ul>
+              <p style="margin-top: 1rem; font-size: 1rem;">Messages sent outside these hours will be addressed the next business day.</p>
+         </div>
+     </section>
+
+
+    <!-- Footer -->
+     <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                 <div class="footer-logo">Quantum SMM</div>
+                 <div class="footer-column footer-about">
+                    <h4>About Us</h4>
+                    <p>Quantum SMM provides elite social media marketing services, focusing on speed, quality, and reliability for rapid growth.</p>
+                 </div>
+                 <div class="footer-column footer-links-section">
+                     <h4>Quick Links</h4>
+                     <ul class="footer-links">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="index.html#services">Services</a></li>
+                         <li><a href="about.html">About Us</a></li>
+                         <li><a href="contact.html">Contact Us</a></li>
+                         <li><a href="index.html#faq">FAQ</a></li>
+                         <li><a href="#">Terms of Service</a></li>
+                         <li><a href="#">Privacy Policy</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-column footer-contact">
+                    <h4>Connect & Support</h4>
+                     <ul class="social-links">
+                         <li><a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                         <li><a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
+                         <li><a href="tel:YOUR_PHONE_NUMBER" aria-label="Call"><i class="fas fa-phone"></i></a></li>
+                         <li><a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                     </ul>
+                     <p><a href="mailto:support@quantumsmm.com">support@quantumsmm.com</a></p>
+                 </div>
+                 <p class="copyright">System Build: v3.18 | © <span id="year"></span> Quantum SMM Network. All Rights Reserved. | Design Inspiration by Quantum Core Labs</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Support Widget -->
+    <div id="support-widget">
+        <button id="support-toggle" aria-label="Open Support Options"> <i class="fas fa-headset"></i> </button>
+        <div id="support-options">
+            <a href="tel:YOUR_PHONE_NUMBER" class="call" aria-label="Call Us" title="Call Us"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" class="whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" class="telegram" aria-label="Chat on Telegram" title="Chat on Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+    </div>
+
+    <!-- Ad Banner -->
+    <div id="ad-banner">
+         <p><strong>Flash Sale!</strong> Limited time offer on YouTube Views! <a href="index.html#services">Check Now!</a></p>
+        <button id="close-ad-btn" aria-label="Close Ad"> <i class="fas fa-times"></i> </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const yearElement = document.getElementById('year');
+            if (yearElement) { yearElement.textContent = new Date().getFullYear(); }
+
+            const menuToggle = document.getElementById('mobile-menu');
+            const mobileNav = document.getElementById('mobile-nav-links');
+            const body = document.body;
+            if (menuToggle && mobileNav) {
+                menuToggle.addEventListener('click', () => {
+                    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                    menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+                    mobileNav.classList.toggle('active');
+                    body.classList.toggle('mobile-menu-active', !isExpanded);
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) { icon.className = !isExpanded ? 'fas fa-times' : 'fas fa-bars'; }
+                });
+                mobileNav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        if (link.getAttribute('href')?.startsWith('#') || link.classList.contains('btn') || link.getAttribute('href')?.endsWith('.html')) {
+                            if (mobileNav.classList.contains('active')) { menuToggle.click(); }
+                        }
+                    });
+                });
+            }
+
+            const header = document.getElementById('main-header');
+            if (header) {
+                const handleScroll = () => {
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    header.classList.toggle('scrolled', scrollTop > 50);
+                };
+                window.addEventListener('scroll', handleScroll, { passive: true });
+            }
+
+             function setActiveLinkContactPage() {
+                 const contactLinksDesktop = document.querySelectorAll('#nav-links-desktop a[href="contact.html"]');
+                 const contactLinksMobile = document.querySelectorAll('#mobile-nav-links a[href="contact.html"]');
+                 const allNavLinks = document.querySelectorAll('#nav-links-desktop a, #mobile-nav-links a');
+                 allNavLinks.forEach(link => link.classList.remove('active'));
+                 contactLinksDesktop.forEach(link => link?.classList.add('active'));
+                 contactLinksMobile.forEach(link => link?.classList.add('active'));
+             }
+             setActiveLinkContactPage();
+
+            const animatedElements = document.querySelectorAll('.animated-element');
+             if ('IntersectionObserver' in window) {
+                 const observerOptions = { root: null, threshold: 0.1, rootMargin: "0px 0px -30px 0px" };
+                 const observer = new IntersectionObserver((entries, observer) => {
+                     entries.forEach(entry => {
+                         if (entry.isIntersecting) {
+                             entry.target.classList.add('visible');
+                             // observer.unobserve(entry.target);
+                         } else {
+                            // entry.target.classList.remove('visible');
+                         }
+                     });
+                 }, observerOptions);
+                 animatedElements.forEach(elem => { observer.observe(elem); });
+            } else {
+                animatedElements.forEach(elem => { elem.classList.add('visible'); });
+            }
+
+            const supportWidget = document.getElementById('support-widget');
+            const supportToggle = document.getElementById('support-toggle');
+            const supportIcon = supportToggle ? supportToggle.querySelector('i') : null;
+            if (supportWidget && supportToggle && supportIcon) {
+                supportToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isActive = supportWidget.classList.toggle('active');
+                    supportIcon.className = isActive ? 'fas fa-times' : 'fas fa-headset';
+                    supportToggle.setAttribute('aria-label', isActive ? 'Close Support Options' : 'Open Support Options');
+                });
+                 document.addEventListener('click', (event) => {
+                     if (supportWidget.classList.contains('active') && !supportWidget.contains(event.target)) { supportToggle.click(); }
+                 });
+                 const supportOptions = document.getElementById('support-options');
+                 if(supportOptions) { supportOptions.addEventListener('click', (e) => e.stopPropagation()); }
+            }
+
+            // --- Ad Banner Logic (Refined Visibility) ---
+            const adBanner = document.getElementById('ad-banner');
+            const closeAdBtn = document.getElementById('close-ad-btn');
+            const AD_CLOSED_KEY = 'quantumAdClosed_v1';
+            let adShowTimeout; // To store the timeout ID
+
+            function showAdBanner() {
+                 if (adBanner && !adBanner.classList.contains('visible') && !adBanner.classList.contains('hidden-permanently')) {
+                     try {
+                         if (localStorage.getItem(AD_CLOSED_KEY) !== 'true') {
+                             adBanner.classList.add('visible'); // Trigger show animation
+                         } else {
+                             adBanner.style.display = 'none'; // Keep hidden if closed before
+                             adBanner.classList.add('hidden-permanently'); // Add a class to prevent future checks
+                         }
+                     } catch (e) {
+                         console.warn('localStorage access error, showing ad.');
+                         adBanner.classList.add('visible');
+                     }
+                 }
+            }
+
+            if (adBanner) {
+                // Check immediately if it should be hidden permanently
+                try {
+                    if (localStorage.getItem(AD_CLOSED_KEY) === 'true') {
+                        adBanner.style.display = 'none';
+                        adBanner.classList.add('hidden-permanently');
+                    }
+                } catch(e) { console.warn("localStorage error on initial check"); }
+
+                // If not hidden permanently, schedule the show animation
+                if (!adBanner.classList.contains('hidden-permanently')) {
+                     adShowTimeout = setTimeout(showAdBanner, 1500); // Show after 1.5 seconds
+                }
+
+
+                if (closeAdBtn) {
+                    closeAdBtn.addEventListener('click', () => {
+                         clearTimeout(adShowTimeout); // Clear timeout if closed before shown
+                         adBanner.classList.remove('visible'); // Remove visible immediately
+                         adBanner.classList.add('hidden'); // Add hidden to trigger slide out
+                         adBanner.classList.add('hidden-permanently'); // Mark as permanently hidden for this session
+                         try { localStorage.setItem(AD_CLOSED_KEY, 'true'); }
+                         catch (e) { console.warn('localStorage access error.'); }
+                         // Optional: Truly hide after animation
+                          setTimeout(() => { adBanner.style.display = 'none'; }, 500); // Match animation duration
+                    });
+                }
+            }
+
+
+             // --- Contact Form Placeholder Submission ---
+             const contactForm = document.getElementById('main-contact-form'); // Use ID for specificity
+             if (contactForm) {
+                 contactForm.addEventListener('submit', (e) => {
+                     e.preventDefault();
+                     // **IMPORTANT**: Replace this alert with actual form submission logic
+                     // using fetch() to send data to your backend or a service like Formspree/Netlify Forms.
+                     alert('Thank you for your message! We will get back to you soon.');
+                     contactForm.reset();
+                 });
+             }
+
+        }); // End DOMContentLoaded
+    </script>
+
+</body>
+</html>
